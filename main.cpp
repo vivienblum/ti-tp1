@@ -4,7 +4,7 @@
 
 
 
-
+#define SEUIL 50  
 
 
 using namespace std;
@@ -17,6 +17,7 @@ int main(int argc, char** argv){
 
 
 	Mat imageIn = imread( argv[1], CV_LOAD_IMAGE_GRAYSCALE );
+	Mat new_image = Mat::zeros( imageIn.size(), imageIn.type() );
 	
 	
 	if(! imageIn.data )                              // Check for invalid input
@@ -25,10 +26,17 @@ int main(int argc, char** argv){
         	return -1;
    	}
 	
-       
+	for( int y = 0; y < imageIn.rows; y++ ) {
+        for( int x = 0; x < imageIn.cols; x++ ) {
+        	if (imageIn.at<uchar>(y,x) < SEUIL)
+            	new_image.at<uchar>(y,x) = 0;
+        	else
+            	new_image.at<uchar>(y,x) = 255;
+        }
+    }
        
 	
-	imshow( "Display window", imageIn );             
+	imshow( "Display window", new_image );             
 	waitKey(0);       	
 
 	
