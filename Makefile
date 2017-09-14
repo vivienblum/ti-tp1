@@ -123,6 +123,32 @@ lectureImage/fast:
 	$(MAKE) -f CMakeFiles/lectureImage.dir/build.make CMakeFiles/lectureImage.dir/build
 .PHONY : lectureImage/fast
 
+#=============================================================================
+# Target rules for targets named seuilGris
+
+# Build rule for target.
+seuilGris: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 seuilGris
+.PHONY : seuilGris
+
+# fast build rule for target.
+seuilGris/fast:
+	$(MAKE) -f CMakeFiles/seuilGris.dir/build.make CMakeFiles/seuilGris.dir/build
+.PHONY : seuilGris/fast
+
+#=============================================================================
+# Target rules for targets named sobel
+
+# Build rule for target.
+sobel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sobel
+.PHONY : sobel
+
+# fast build rule for target.
+sobel/fast:
+	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/build
+.PHONY : sobel/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,6 +176,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/lectureImage.dir/build.make CMakeFiles/lectureImage.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+seuilGris.o: seuilGris.cpp.o
+
+.PHONY : seuilGris.o
+
+# target to build an object file
+seuilGris.cpp.o:
+	$(MAKE) -f CMakeFiles/seuilGris.dir/build.make CMakeFiles/seuilGris.dir/seuilGris.cpp.o
+.PHONY : seuilGris.cpp.o
+
+seuilGris.i: seuilGris.cpp.i
+
+.PHONY : seuilGris.i
+
+# target to preprocess a source file
+seuilGris.cpp.i:
+	$(MAKE) -f CMakeFiles/seuilGris.dir/build.make CMakeFiles/seuilGris.dir/seuilGris.cpp.i
+.PHONY : seuilGris.cpp.i
+
+seuilGris.s: seuilGris.cpp.s
+
+.PHONY : seuilGris.s
+
+# target to generate assembly for a file
+seuilGris.cpp.s:
+	$(MAKE) -f CMakeFiles/seuilGris.dir/build.make CMakeFiles/seuilGris.dir/seuilGris.cpp.s
+.PHONY : seuilGris.cpp.s
+
+sobel.o: sobel.cpp.o
+
+.PHONY : sobel.o
+
+# target to build an object file
+sobel.cpp.o:
+	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/sobel.cpp.o
+.PHONY : sobel.cpp.o
+
+sobel.i: sobel.cpp.i
+
+.PHONY : sobel.i
+
+# target to preprocess a source file
+sobel.cpp.i:
+	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/sobel.cpp.i
+.PHONY : sobel.cpp.i
+
+sobel.s: sobel.cpp.s
+
+.PHONY : sobel.s
+
+# target to generate assembly for a file
+sobel.cpp.s:
+	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/sobel.cpp.s
+.PHONY : sobel.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -157,11 +237,19 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... rebuild_cache"
 	@echo "... lectureImage"
+	@echo "... seuilGris"
+	@echo "... sobel"
+	@echo "... rebuild_cache"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... seuilGris.o"
+	@echo "... seuilGris.i"
+	@echo "... seuilGris.s"
+	@echo "... sobel.o"
+	@echo "... sobel.i"
+	@echo "... sobel.s"
 .PHONY : help
 
 
