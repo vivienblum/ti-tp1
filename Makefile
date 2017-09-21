@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named sobel_optimize
+
+# Build rule for target.
+sobel_optimize: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sobel_optimize
+.PHONY : sobel_optimize
+
+# fast build rule for target.
+sobel_optimize/fast:
+	$(MAKE) -f CMakeFiles/sobel_optimize.dir/build.make CMakeFiles/sobel_optimize.dir/build
+.PHONY : sobel_optimize/fast
+
+#=============================================================================
 # Target rules for targets named result
 
 # Build rule for target.
@@ -310,6 +323,33 @@ sobel.cpp.s:
 	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/sobel.cpp.s
 .PHONY : sobel.cpp.s
 
+sobel_optimize.o: sobel_optimize.cpp.o
+
+.PHONY : sobel_optimize.o
+
+# target to build an object file
+sobel_optimize.cpp.o:
+	$(MAKE) -f CMakeFiles/sobel_optimize.dir/build.make CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.o
+.PHONY : sobel_optimize.cpp.o
+
+sobel_optimize.i: sobel_optimize.cpp.i
+
+.PHONY : sobel_optimize.i
+
+# target to preprocess a source file
+sobel_optimize.cpp.i:
+	$(MAKE) -f CMakeFiles/sobel_optimize.dir/build.make CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.i
+.PHONY : sobel_optimize.cpp.i
+
+sobel_optimize.s: sobel_optimize.cpp.s
+
+.PHONY : sobel_optimize.s
+
+# target to generate assembly for a file
+sobel_optimize.cpp.s:
+	$(MAKE) -f CMakeFiles/sobel_optimize.dir/build.make CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.s
+.PHONY : sobel_optimize.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -318,6 +358,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... sobel_optimize"
 	@echo "... result"
 	@echo "... lectureImage"
 	@echo "... seuilGris"
@@ -338,6 +379,9 @@ help:
 	@echo "... sobel.o"
 	@echo "... sobel.i"
 	@echo "... sobel.s"
+	@echo "... sobel_optimize.o"
+	@echo "... sobel_optimize.i"
+	@echo "... sobel_optimize.s"
 .PHONY : help
 
 

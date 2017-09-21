@@ -24,8 +24,8 @@ int main(int argc, char** argv){
    	}
 
 	//Affichage de l'image original
-	//namedWindow( "Original image", CV_WINDOW_AUTOSIZE );
-	//imshow( "Original image", imageIn ); 
+	namedWindow( "Original image", CV_WINDOW_AUTOSIZE );
+	imshow( "Original image", imageIn ); 
 
 	//Declaration variables    
 	Mat imageOutX, imageOutY, imageOut;
@@ -47,8 +47,8 @@ int main(int argc, char** argv){
 
     //Creation du fichier et affichage de l'image
 	imwrite( argv[2], imageOut);
-	//namedWindow("Gradient Sobel", CV_WINDOW_AUTOSIZE);
-	//imshow( "Gradient Sobel", imageOut );        
+	namedWindow("Gradient Sobel", CV_WINDOW_AUTOSIZE);
+	imshow( "Gradient Sobel", imageOut );        
 
 	waitKey(0);       	
 	

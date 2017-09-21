@@ -42,6 +42,10 @@ add_executable (result
   result.cpp
 )
 
+add_executable (sobel_optimize
+  sobel_optimize.cpp
+)
+
 target_link_libraries (lectureImage
   ${OpenCV_LIBS}
 )
@@ -59,5 +63,9 @@ target_link_libraries (evaluation
 )
 
 target_link_libraries (result
+  ${OpenCV_LIBS}
+)
+
+target_link_libraries (sobel_optimize
   ${OpenCV_LIBS}
 )

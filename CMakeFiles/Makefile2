@@ -60,6 +60,43 @@ CMAKE_SOURCE_DIR = /home/tp-home008/vblum/Documents/TI/tp1
 CMAKE_BINARY_DIR = /home/tp-home008/vblum/Documents/TI/tp1
 
 #=============================================================================
+# Target rules for target CMakeFiles/sobel_optimize.dir
+
+# All Build rule for target.
+CMakeFiles/sobel_optimize.dir/all:
+	$(MAKE) -f CMakeFiles/sobel_optimize.dir/build.make CMakeFiles/sobel_optimize.dir/depend
+	$(MAKE) -f CMakeFiles/sobel_optimize.dir/build.make CMakeFiles/sobel_optimize.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tp-home008/vblum/Documents/TI/tp1/CMakeFiles --progress-num=11,12 "Built target sobel_optimize"
+.PHONY : CMakeFiles/sobel_optimize.dir/all
+
+# Include target in all.
+all: CMakeFiles/sobel_optimize.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sobel_optimize.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tp-home008/vblum/Documents/TI/tp1/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sobel_optimize.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tp-home008/vblum/Documents/TI/tp1/CMakeFiles 0
+.PHONY : CMakeFiles/sobel_optimize.dir/rule
+
+# Convenience name for target.
+sobel_optimize: CMakeFiles/sobel_optimize.dir/rule
+
+.PHONY : sobel_optimize
+
+# clean rule for target.
+CMakeFiles/sobel_optimize.dir/clean:
+	$(MAKE) -f CMakeFiles/sobel_optimize.dir/build.make CMakeFiles/sobel_optimize.dir/clean
+.PHONY : CMakeFiles/sobel_optimize.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/sobel_optimize.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/result.dir
 
 # All Build rule for target.
