@@ -2,14 +2,8 @@
 #include <stdio.h>
 #include <iostream>
 
-  
-#define SEUIL 90
-
-
 using namespace std;
 using namespace cv;
-
-
 
 int main(int argc, char** argv){
 
@@ -19,6 +13,7 @@ int main(int argc, char** argv){
 		
 	int tp = 0,fp = 0, fn = 0;
 	float p, r;
+
 	//Verification que l'image existe
 	if(! imageFake.data || ! imageTrue.data )                             
     {
@@ -29,16 +24,12 @@ int main(int argc, char** argv){
    	// On calcule le nombre de vrais pixels de fissure
    	for( int y = 0; y < imageTrue.rows; y++ ) {
         for( int x = 0; x < imageTrue.cols; x++ ) {
-        	if (imageTrue.at<uchar>(y,x) == 255)
+        	if (imageFake.at<uchar>(y,x) == 255 && imageTrue.at<uchar>(y,x) == 255)
             	tp++;
-        }
-    }
-
-	// On calcule le nombre de faux pixels de fissure
-    for( int y = 0; y < imageFake.rows; y++ ) {
-        for( int x = 0; x < imageFake.cols; x++ ) {
-        	if (imageFake.at<uchar>(y,x) == 255)
+        	if (imageFake.at<uchar>(y,x) == 255 && imageTrue.at<uchar>(y,x) == 0)
             	fp++;
+        	if (imageTrue.at<uchar>(y,x) == 255 && imageFake.at<uchar>(y,x) == 0)
+            	fn++;
         }
     }
 

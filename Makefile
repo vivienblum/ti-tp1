@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named result
+
+# Build rule for target.
+result: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 result
+.PHONY : result
+
+# fast build rule for target.
+result/fast:
+	$(MAKE) -f CMakeFiles/result.dir/build.make CMakeFiles/result.dir/build
+.PHONY : result/fast
+
+#=============================================================================
 # Target rules for targets named lectureImage
 
 # Build rule for target.
@@ -216,6 +229,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/lectureImage.dir/build.make CMakeFiles/lectureImage.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+result.o: result.cpp.o
+
+.PHONY : result.o
+
+# target to build an object file
+result.cpp.o:
+	$(MAKE) -f CMakeFiles/result.dir/build.make CMakeFiles/result.dir/result.cpp.o
+.PHONY : result.cpp.o
+
+result.i: result.cpp.i
+
+.PHONY : result.i
+
+# target to preprocess a source file
+result.cpp.i:
+	$(MAKE) -f CMakeFiles/result.dir/build.make CMakeFiles/result.dir/result.cpp.i
+.PHONY : result.cpp.i
+
+result.s: result.cpp.s
+
+.PHONY : result.s
+
+# target to generate assembly for a file
+result.cpp.s:
+	$(MAKE) -f CMakeFiles/result.dir/build.make CMakeFiles/result.dir/result.cpp.s
+.PHONY : result.cpp.s
+
 seuilGris.o: seuilGris.cpp.o
 
 .PHONY : seuilGris.o
@@ -278,6 +318,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... result"
 	@echo "... lectureImage"
 	@echo "... seuilGris"
 	@echo "... sobel"
@@ -288,6 +329,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... result.o"
+	@echo "... result.i"
+	@echo "... result.s"
 	@echo "... seuilGris.o"
 	@echo "... seuilGris.i"
 	@echo "... seuilGris.s"
