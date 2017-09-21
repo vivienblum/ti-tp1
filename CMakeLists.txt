@@ -34,6 +34,10 @@ add_executable (sobel
   sobel.cpp
 )
 
+add_executable (evaluation
+  evaluation.cpp
+)
+
 target_link_libraries (lectureImage
   ${OpenCV_LIBS}
 )
@@ -43,5 +47,9 @@ target_link_libraries (seuilGris
 )
 
 target_link_libraries (sobel
+  ${OpenCV_LIBS}
+)
+
+target_link_libraries (evaluation
   ${OpenCV_LIBS}
 )

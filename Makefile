@@ -149,6 +149,46 @@ sobel/fast:
 	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/build
 .PHONY : sobel/fast
 
+#=============================================================================
+# Target rules for targets named evaluation
+
+# Build rule for target.
+evaluation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 evaluation
+.PHONY : evaluation
+
+# fast build rule for target.
+evaluation/fast:
+	$(MAKE) -f CMakeFiles/evaluation.dir/build.make CMakeFiles/evaluation.dir/build
+.PHONY : evaluation/fast
+
+evaluation.o: evaluation.cpp.o
+
+.PHONY : evaluation.o
+
+# target to build an object file
+evaluation.cpp.o:
+	$(MAKE) -f CMakeFiles/evaluation.dir/build.make CMakeFiles/evaluation.dir/evaluation.cpp.o
+.PHONY : evaluation.cpp.o
+
+evaluation.i: evaluation.cpp.i
+
+.PHONY : evaluation.i
+
+# target to preprocess a source file
+evaluation.cpp.i:
+	$(MAKE) -f CMakeFiles/evaluation.dir/build.make CMakeFiles/evaluation.dir/evaluation.cpp.i
+.PHONY : evaluation.cpp.i
+
+evaluation.s: evaluation.cpp.s
+
+.PHONY : evaluation.s
+
+# target to generate assembly for a file
+evaluation.cpp.s:
+	$(MAKE) -f CMakeFiles/evaluation.dir/build.make CMakeFiles/evaluation.dir/evaluation.cpp.s
+.PHONY : evaluation.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -237,10 +277,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
 	@echo "... lectureImage"
 	@echo "... seuilGris"
 	@echo "... sobel"
-	@echo "... rebuild_cache"
+	@echo "... evaluation"
+	@echo "... evaluation.o"
+	@echo "... evaluation.i"
+	@echo "... evaluation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
