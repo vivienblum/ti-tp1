@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named sobel_optimize
+
+# Build rule for target.
+sobel_optimize: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sobel_optimize
+.PHONY : sobel_optimize
+
+# fast build rule for target.
+sobel_optimize/fast:
+	$(MAKE) -f CMakeFiles/sobel_optimize.dir/build.make CMakeFiles/sobel_optimize.dir/build
+.PHONY : sobel_optimize/fast
+
+#=============================================================================
+# Target rules for targets named result
+
+# Build rule for target.
+result: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 result
+.PHONY : result
+
+# fast build rule for target.
+result/fast:
+	$(MAKE) -f CMakeFiles/result.dir/build.make CMakeFiles/result.dir/build
+.PHONY : result/fast
+
+#=============================================================================
 # Target rules for targets named lectureImage
 
 # Build rule for target.
@@ -149,6 +175,46 @@ sobel/fast:
 	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/build
 .PHONY : sobel/fast
 
+#=============================================================================
+# Target rules for targets named evaluation
+
+# Build rule for target.
+evaluation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 evaluation
+.PHONY : evaluation
+
+# fast build rule for target.
+evaluation/fast:
+	$(MAKE) -f CMakeFiles/evaluation.dir/build.make CMakeFiles/evaluation.dir/build
+.PHONY : evaluation/fast
+
+evaluation.o: evaluation.cpp.o
+
+.PHONY : evaluation.o
+
+# target to build an object file
+evaluation.cpp.o:
+	$(MAKE) -f CMakeFiles/evaluation.dir/build.make CMakeFiles/evaluation.dir/evaluation.cpp.o
+.PHONY : evaluation.cpp.o
+
+evaluation.i: evaluation.cpp.i
+
+.PHONY : evaluation.i
+
+# target to preprocess a source file
+evaluation.cpp.i:
+	$(MAKE) -f CMakeFiles/evaluation.dir/build.make CMakeFiles/evaluation.dir/evaluation.cpp.i
+.PHONY : evaluation.cpp.i
+
+evaluation.s: evaluation.cpp.s
+
+.PHONY : evaluation.s
+
+# target to generate assembly for a file
+evaluation.cpp.s:
+	$(MAKE) -f CMakeFiles/evaluation.dir/build.make CMakeFiles/evaluation.dir/evaluation.cpp.s
+.PHONY : evaluation.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -175,6 +241,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/lectureImage.dir/build.make CMakeFiles/lectureImage.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+result.o: result.cpp.o
+
+.PHONY : result.o
+
+# target to build an object file
+result.cpp.o:
+	$(MAKE) -f CMakeFiles/result.dir/build.make CMakeFiles/result.dir/result.cpp.o
+.PHONY : result.cpp.o
+
+result.i: result.cpp.i
+
+.PHONY : result.i
+
+# target to preprocess a source file
+result.cpp.i:
+	$(MAKE) -f CMakeFiles/result.dir/build.make CMakeFiles/result.dir/result.cpp.i
+.PHONY : result.cpp.i
+
+result.s: result.cpp.s
+
+.PHONY : result.s
+
+# target to generate assembly for a file
+result.cpp.s:
+	$(MAKE) -f CMakeFiles/result.dir/build.make CMakeFiles/result.dir/result.cpp.s
+.PHONY : result.cpp.s
 
 seuilGris.o: seuilGris.cpp.o
 
@@ -230,6 +323,33 @@ sobel.cpp.s:
 	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/sobel.cpp.s
 .PHONY : sobel.cpp.s
 
+sobel_optimize.o: sobel_optimize.cpp.o
+
+.PHONY : sobel_optimize.o
+
+# target to build an object file
+sobel_optimize.cpp.o:
+	$(MAKE) -f CMakeFiles/sobel_optimize.dir/build.make CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.o
+.PHONY : sobel_optimize.cpp.o
+
+sobel_optimize.i: sobel_optimize.cpp.i
+
+.PHONY : sobel_optimize.i
+
+# target to preprocess a source file
+sobel_optimize.cpp.i:
+	$(MAKE) -f CMakeFiles/sobel_optimize.dir/build.make CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.i
+.PHONY : sobel_optimize.cpp.i
+
+sobel_optimize.s: sobel_optimize.cpp.s
+
+.PHONY : sobel_optimize.s
+
+# target to generate assembly for a file
+sobel_optimize.cpp.s:
+	$(MAKE) -f CMakeFiles/sobel_optimize.dir/build.make CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.s
+.PHONY : sobel_optimize.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -237,19 +357,31 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... sobel_optimize"
+	@echo "... result"
 	@echo "... lectureImage"
 	@echo "... seuilGris"
 	@echo "... sobel"
-	@echo "... rebuild_cache"
+	@echo "... evaluation"
+	@echo "... evaluation.o"
+	@echo "... evaluation.i"
+	@echo "... evaluation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... result.o"
+	@echo "... result.i"
+	@echo "... result.s"
 	@echo "... seuilGris.o"
 	@echo "... seuilGris.i"
 	@echo "... seuilGris.s"
 	@echo "... sobel.o"
 	@echo "... sobel.i"
 	@echo "... sobel.s"
+	@echo "... sobel_optimize.o"
+	@echo "... sobel_optimize.i"
+	@echo "... sobel_optimize.s"
 .PHONY : help
 
 

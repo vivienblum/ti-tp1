@@ -4,7 +4,7 @@
 
 
 
-#define SEUIL 50  
+#define SEUIL 70  
 
 
 using namespace std;
