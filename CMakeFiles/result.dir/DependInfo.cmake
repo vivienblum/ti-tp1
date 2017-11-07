@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tp-home008/vblum/Documents/TI/tp1/result.cpp" "/home/tp-home008/vblum/Documents/TI/tp1/CMakeFiles/result.dir/result.cpp.o"
+  "/home/anuswan/Documents/ti/pieces-monnaie/result.cpp" "/home/anuswan/Documents/ti/pieces-monnaie/CMakeFiles/result.dir/result.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
-  "PROJECT_DIRECTORY=\"/home/tp-home008/vblum/Documents/TI/tp1\""
+  "PROJECT_DIRECTORY=\"/home/anuswan/Documents/ti/pieces-monnaie\""
   )
 
 # The include file search paths:

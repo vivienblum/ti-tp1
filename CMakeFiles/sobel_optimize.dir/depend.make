@@ -121,4 +121,9 @@ CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.o: /usr/local/include/opencv2/v
 CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.o: /usr/local/include/opencv2/videostab/ring_buffer.hpp
 CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.o: /usr/local/include/opencv2/videostab/stabilizer.hpp
 CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.o: /usr/local/include/opencv2/videostab/wobble_suppression.hpp
+CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.o: /usr/local/include/opencv2/viz.hpp
+CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.o: /usr/local/include/opencv2/viz/types.hpp
+CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.o: /usr/local/include/opencv2/viz/viz3d.hpp
+CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.o: /usr/local/include/opencv2/viz/vizcore.hpp
+CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.o: /usr/local/include/opencv2/viz/widgets.hpp
 

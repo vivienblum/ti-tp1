@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/anuswan/Documents/ti/pieces-monnaie/sobel_optimize.cpp
+/home/anuswan/Documents/ti/pieces-monnaie/get_nb_cercles.cpp
 opencv2/opencv.hpp
 -
 stdio.h

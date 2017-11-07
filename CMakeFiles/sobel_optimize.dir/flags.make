@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS =  -fopenmp  
 
-CXX_DEFINES = -DPROJECT_DIRECTORY=\"/home/tp-home008/vblum/Documents/TI/tp1\"
+CXX_DEFINES = -DPROJECT_DIRECTORY=\"/home/anuswan/Documents/ti/pieces-monnaie\"
 
-CXX_INCLUDES = -I/home/tp-home008/vblum/Documents/TI/tp1 -isystem /usr/local/include -isystem /usr/local/include/opencv 
+CXX_INCLUDES = -I/home/anuswan/Documents/ti/pieces-monnaie -isystem /usr/local/include -isystem /usr/local/include/opencv 
 

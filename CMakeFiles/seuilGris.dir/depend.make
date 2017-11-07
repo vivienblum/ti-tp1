@@ -121,4 +121,9 @@ CMakeFiles/seuilGris.dir/seuilGris.cpp.o: /usr/local/include/opencv2/videostab/o
 CMakeFiles/seuilGris.dir/seuilGris.cpp.o: /usr/local/include/opencv2/videostab/ring_buffer.hpp
 CMakeFiles/seuilGris.dir/seuilGris.cpp.o: /usr/local/include/opencv2/videostab/stabilizer.hpp
 CMakeFiles/seuilGris.dir/seuilGris.cpp.o: /usr/local/include/opencv2/videostab/wobble_suppression.hpp
+CMakeFiles/seuilGris.dir/seuilGris.cpp.o: /usr/local/include/opencv2/viz.hpp
+CMakeFiles/seuilGris.dir/seuilGris.cpp.o: /usr/local/include/opencv2/viz/types.hpp
+CMakeFiles/seuilGris.dir/seuilGris.cpp.o: /usr/local/include/opencv2/viz/viz3d.hpp
+CMakeFiles/seuilGris.dir/seuilGris.cpp.o: /usr/local/include/opencv2/viz/vizcore.hpp
+CMakeFiles/seuilGris.dir/seuilGris.cpp.o: /usr/local/include/opencv2/viz/widgets.hpp
 

@@ -1,8 +1,3 @@
-/home/tp-home008/vblum/Documents/TI/tp1/CMakeFiles/edit_cache.dir
-/home/tp-home008/vblum/Documents/TI/tp1/CMakeFiles/rebuild_cache.dir
-/home/tp-home008/vblum/Documents/TI/tp1/CMakeFiles/sobel_optimize.dir
-/home/tp-home008/vblum/Documents/TI/tp1/CMakeFiles/result.dir
-/home/tp-home008/vblum/Documents/TI/tp1/CMakeFiles/lectureImage.dir
-/home/tp-home008/vblum/Documents/TI/tp1/CMakeFiles/seuilGris.dir
-/home/tp-home008/vblum/Documents/TI/tp1/CMakeFiles/sobel.dir
-/home/tp-home008/vblum/Documents/TI/tp1/CMakeFiles/evaluation.dir
+/home/anuswan/Documents/ti/pieces-monnaie/CMakeFiles/rebuild_cache.dir
+/home/anuswan/Documents/ti/pieces-monnaie/CMakeFiles/edit_cache.dir
+/home/anuswan/Documents/ti/pieces-monnaie/CMakeFiles/getNbCercle.dir

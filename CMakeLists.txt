@@ -22,50 +22,10 @@ include_directories (${CMAKE_CURRENT_BINARY_DIR})
 include_directories (${CMAKE_CURRENT_SOURCE_DIR})
 
 
-add_executable (lectureImage
-  main.cpp
+add_executable (getNbCercle
+  get_nb_cercles.cpp
 )
 
-add_executable (seuilGris
-  seuilGris.cpp
-)
-
-add_executable (sobel
-  sobel.cpp
-)
-
-add_executable (evaluation
-  evaluation.cpp
-)
-
-add_executable (result
-  result.cpp
-)
-
-add_executable (sobel_optimize
-  sobel_optimize.cpp
-)
-
-target_link_libraries (lectureImage
-  ${OpenCV_LIBS}
-)
-
-target_link_libraries (seuilGris
-  ${OpenCV_LIBS}
-)
-
-target_link_libraries (sobel
-  ${OpenCV_LIBS}
-)
-
-target_link_libraries (evaluation
-  ${OpenCV_LIBS}
-)
-
-target_link_libraries (result
-  ${OpenCV_LIBS}
-)
-
-target_link_libraries (sobel_optimize
+target_link_libraries (getNbCercle
   ${OpenCV_LIBS}
 )

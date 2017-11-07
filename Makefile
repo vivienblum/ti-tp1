@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tp-home008/vblum/Documents/TI/tp1
+CMAKE_SOURCE_DIR = /home/anuswan/Documents/ti/pieces-monnaie
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tp-home008/vblum/Documents/TI/tp1
+CMAKE_BINARY_DIR = /home/anuswan/Documents/ti/pieces-monnaie
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tp-home008/vblum/Documents/TI/tp1/CMakeFiles /home/tp-home008/vblum/Documents/TI/tp1/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anuswan/Documents/ti/pieces-monnaie/CMakeFiles /home/anuswan/Documents/ti/pieces-monnaie/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tp-home008/vblum/Documents/TI/tp1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anuswan/Documents/ti/pieces-monnaie/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,244 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named sobel_optimize
+# Target rules for targets named getNbCercle
 
 # Build rule for target.
-sobel_optimize: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sobel_optimize
-.PHONY : sobel_optimize
+getNbCercle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 getNbCercle
+.PHONY : getNbCercle
 
 # fast build rule for target.
-sobel_optimize/fast:
-	$(MAKE) -f CMakeFiles/sobel_optimize.dir/build.make CMakeFiles/sobel_optimize.dir/build
-.PHONY : sobel_optimize/fast
+getNbCercle/fast:
+	$(MAKE) -f CMakeFiles/getNbCercle.dir/build.make CMakeFiles/getNbCercle.dir/build
+.PHONY : getNbCercle/fast
 
-#=============================================================================
-# Target rules for targets named result
+get_nb_cercles.o: get_nb_cercles.cpp.o
 
-# Build rule for target.
-result: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 result
-.PHONY : result
-
-# fast build rule for target.
-result/fast:
-	$(MAKE) -f CMakeFiles/result.dir/build.make CMakeFiles/result.dir/build
-.PHONY : result/fast
-
-#=============================================================================
-# Target rules for targets named lectureImage
-
-# Build rule for target.
-lectureImage: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lectureImage
-.PHONY : lectureImage
-
-# fast build rule for target.
-lectureImage/fast:
-	$(MAKE) -f CMakeFiles/lectureImage.dir/build.make CMakeFiles/lectureImage.dir/build
-.PHONY : lectureImage/fast
-
-#=============================================================================
-# Target rules for targets named seuilGris
-
-# Build rule for target.
-seuilGris: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 seuilGris
-.PHONY : seuilGris
-
-# fast build rule for target.
-seuilGris/fast:
-	$(MAKE) -f CMakeFiles/seuilGris.dir/build.make CMakeFiles/seuilGris.dir/build
-.PHONY : seuilGris/fast
-
-#=============================================================================
-# Target rules for targets named sobel
-
-# Build rule for target.
-sobel: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sobel
-.PHONY : sobel
-
-# fast build rule for target.
-sobel/fast:
-	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/build
-.PHONY : sobel/fast
-
-#=============================================================================
-# Target rules for targets named evaluation
-
-# Build rule for target.
-evaluation: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 evaluation
-.PHONY : evaluation
-
-# fast build rule for target.
-evaluation/fast:
-	$(MAKE) -f CMakeFiles/evaluation.dir/build.make CMakeFiles/evaluation.dir/build
-.PHONY : evaluation/fast
-
-evaluation.o: evaluation.cpp.o
-
-.PHONY : evaluation.o
+.PHONY : get_nb_cercles.o
 
 # target to build an object file
-evaluation.cpp.o:
-	$(MAKE) -f CMakeFiles/evaluation.dir/build.make CMakeFiles/evaluation.dir/evaluation.cpp.o
-.PHONY : evaluation.cpp.o
+get_nb_cercles.cpp.o:
+	$(MAKE) -f CMakeFiles/getNbCercle.dir/build.make CMakeFiles/getNbCercle.dir/get_nb_cercles.cpp.o
+.PHONY : get_nb_cercles.cpp.o
 
-evaluation.i: evaluation.cpp.i
+get_nb_cercles.i: get_nb_cercles.cpp.i
 
-.PHONY : evaluation.i
-
-# target to preprocess a source file
-evaluation.cpp.i:
-	$(MAKE) -f CMakeFiles/evaluation.dir/build.make CMakeFiles/evaluation.dir/evaluation.cpp.i
-.PHONY : evaluation.cpp.i
-
-evaluation.s: evaluation.cpp.s
-
-.PHONY : evaluation.s
-
-# target to generate assembly for a file
-evaluation.cpp.s:
-	$(MAKE) -f CMakeFiles/evaluation.dir/build.make CMakeFiles/evaluation.dir/evaluation.cpp.s
-.PHONY : evaluation.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/lectureImage.dir/build.make CMakeFiles/lectureImage.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
+.PHONY : get_nb_cercles.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/lectureImage.dir/build.make CMakeFiles/lectureImage.dir/main.cpp.i
-.PHONY : main.cpp.i
+get_nb_cercles.cpp.i:
+	$(MAKE) -f CMakeFiles/getNbCercle.dir/build.make CMakeFiles/getNbCercle.dir/get_nb_cercles.cpp.i
+.PHONY : get_nb_cercles.cpp.i
 
-main.s: main.cpp.s
+get_nb_cercles.s: get_nb_cercles.cpp.s
 
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/lectureImage.dir/build.make CMakeFiles/lectureImage.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-result.o: result.cpp.o
-
-.PHONY : result.o
-
-# target to build an object file
-result.cpp.o:
-	$(MAKE) -f CMakeFiles/result.dir/build.make CMakeFiles/result.dir/result.cpp.o
-.PHONY : result.cpp.o
-
-result.i: result.cpp.i
-
-.PHONY : result.i
-
-# target to preprocess a source file
-result.cpp.i:
-	$(MAKE) -f CMakeFiles/result.dir/build.make CMakeFiles/result.dir/result.cpp.i
-.PHONY : result.cpp.i
-
-result.s: result.cpp.s
-
-.PHONY : result.s
+.PHONY : get_nb_cercles.s
 
 # target to generate assembly for a file
-result.cpp.s:
-	$(MAKE) -f CMakeFiles/result.dir/build.make CMakeFiles/result.dir/result.cpp.s
-.PHONY : result.cpp.s
-
-seuilGris.o: seuilGris.cpp.o
-
-.PHONY : seuilGris.o
-
-# target to build an object file
-seuilGris.cpp.o:
-	$(MAKE) -f CMakeFiles/seuilGris.dir/build.make CMakeFiles/seuilGris.dir/seuilGris.cpp.o
-.PHONY : seuilGris.cpp.o
-
-seuilGris.i: seuilGris.cpp.i
-
-.PHONY : seuilGris.i
-
-# target to preprocess a source file
-seuilGris.cpp.i:
-	$(MAKE) -f CMakeFiles/seuilGris.dir/build.make CMakeFiles/seuilGris.dir/seuilGris.cpp.i
-.PHONY : seuilGris.cpp.i
-
-seuilGris.s: seuilGris.cpp.s
-
-.PHONY : seuilGris.s
-
-# target to generate assembly for a file
-seuilGris.cpp.s:
-	$(MAKE) -f CMakeFiles/seuilGris.dir/build.make CMakeFiles/seuilGris.dir/seuilGris.cpp.s
-.PHONY : seuilGris.cpp.s
-
-sobel.o: sobel.cpp.o
-
-.PHONY : sobel.o
-
-# target to build an object file
-sobel.cpp.o:
-	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/sobel.cpp.o
-.PHONY : sobel.cpp.o
-
-sobel.i: sobel.cpp.i
-
-.PHONY : sobel.i
-
-# target to preprocess a source file
-sobel.cpp.i:
-	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/sobel.cpp.i
-.PHONY : sobel.cpp.i
-
-sobel.s: sobel.cpp.s
-
-.PHONY : sobel.s
-
-# target to generate assembly for a file
-sobel.cpp.s:
-	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/sobel.cpp.s
-.PHONY : sobel.cpp.s
-
-sobel_optimize.o: sobel_optimize.cpp.o
-
-.PHONY : sobel_optimize.o
-
-# target to build an object file
-sobel_optimize.cpp.o:
-	$(MAKE) -f CMakeFiles/sobel_optimize.dir/build.make CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.o
-.PHONY : sobel_optimize.cpp.o
-
-sobel_optimize.i: sobel_optimize.cpp.i
-
-.PHONY : sobel_optimize.i
-
-# target to preprocess a source file
-sobel_optimize.cpp.i:
-	$(MAKE) -f CMakeFiles/sobel_optimize.dir/build.make CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.i
-.PHONY : sobel_optimize.cpp.i
-
-sobel_optimize.s: sobel_optimize.cpp.s
-
-.PHONY : sobel_optimize.s
-
-# target to generate assembly for a file
-sobel_optimize.cpp.s:
-	$(MAKE) -f CMakeFiles/sobel_optimize.dir/build.make CMakeFiles/sobel_optimize.dir/sobel_optimize.cpp.s
-.PHONY : sobel_optimize.cpp.s
+get_nb_cercles.cpp.s:
+	$(MAKE) -f CMakeFiles/getNbCercle.dir/build.make CMakeFiles/getNbCercle.dir/get_nb_cercles.cpp.s
+.PHONY : get_nb_cercles.cpp.s
 
 # Help Target
 help:
@@ -356,32 +156,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... sobel_optimize"
-	@echo "... result"
-	@echo "... lectureImage"
-	@echo "... seuilGris"
-	@echo "... sobel"
-	@echo "... evaluation"
-	@echo "... evaluation.o"
-	@echo "... evaluation.i"
-	@echo "... evaluation.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... result.o"
-	@echo "... result.i"
-	@echo "... result.s"
-	@echo "... seuilGris.o"
-	@echo "... seuilGris.i"
-	@echo "... seuilGris.s"
-	@echo "... sobel.o"
-	@echo "... sobel.i"
-	@echo "... sobel.s"
-	@echo "... sobel_optimize.o"
-	@echo "... sobel_optimize.i"
-	@echo "... sobel_optimize.s"
+	@echo "... edit_cache"
+	@echo "... getNbCercle"
+	@echo "... get_nb_cercles.o"
+	@echo "... get_nb_cercles.i"
+	@echo "... get_nb_cercles.s"
 .PHONY : help
 
 

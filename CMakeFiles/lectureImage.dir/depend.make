@@ -121,4 +121,9 @@ CMakeFiles/lectureImage.dir/main.cpp.o: /usr/local/include/opencv2/videostab/out
 CMakeFiles/lectureImage.dir/main.cpp.o: /usr/local/include/opencv2/videostab/ring_buffer.hpp
 CMakeFiles/lectureImage.dir/main.cpp.o: /usr/local/include/opencv2/videostab/stabilizer.hpp
 CMakeFiles/lectureImage.dir/main.cpp.o: /usr/local/include/opencv2/videostab/wobble_suppression.hpp
+CMakeFiles/lectureImage.dir/main.cpp.o: /usr/local/include/opencv2/viz.hpp
+CMakeFiles/lectureImage.dir/main.cpp.o: /usr/local/include/opencv2/viz/types.hpp
+CMakeFiles/lectureImage.dir/main.cpp.o: /usr/local/include/opencv2/viz/viz3d.hpp
+CMakeFiles/lectureImage.dir/main.cpp.o: /usr/local/include/opencv2/viz/vizcore.hpp
+CMakeFiles/lectureImage.dir/main.cpp.o: /usr/local/include/opencv2/viz/widgets.hpp
 
